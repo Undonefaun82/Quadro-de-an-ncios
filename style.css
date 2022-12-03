@@ -15,6 +15,40 @@ header {
     justify-content: space-evenly;
     align-content: center;
     flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+tr {
+    background-color: white;
+}
+
+td,
+th {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.rolar {
+    position: sticky;
+    top: -1px;
+}
+
+tr:nth-child(2n) {
+    background-color: lightgray;
+}
+
+.programacao {
+    margin-bottom: 15px;
 }
 
 nav {
@@ -38,13 +72,13 @@ li::marker {
 a {
     text-decoration: none;
     color: #BFBFBF;
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.imgs {
-    padding-left: 50px;
+.eventos {
+    margin-bottom: 15px;
 }
 
 h1 {
@@ -71,4 +105,17 @@ h4 {
 
 footer {
     height: 60px;
+}
+
+
+@media screen and (min-width: 480px) {
+    .imgs {
+        padding-left: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #BFBFBF;
+        display: inline;
+    }
 }
